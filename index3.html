@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f0f4f8;
+        padding: 20px;
+    }
+    
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    
+    .timetable {
+        display: grid;
+        grid-template-columns: 100px repeat(5, 1fr);
+        /* Cột 1 là giờ học, sau đó 5 ngày trong tuần */
+        gap: 1px;
+        background-color: #ccc;
+        margin-top: 30px;
+    }
+    
+    .cell {
+        background-color: #fff;
+        padding: 15px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+    
+    .header {
+        background-color: #0077cc;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .time-col {
+        background-color: #f9f9f9;
+        font-weight: bold;
+    }
+    
+    .timetable-row {
+        display: contents;
+        /* Giúp mỗi hàng là dòng Grid nhưng vẫn nằm trong Grid cha */
+    }
+    
+    .subject {
+        background-color: #e1f5fe;
+        border-radius: 4px;
+    }
+    
+    .subject.math {
+        background-color: #ffcdd2;
+    }
+    
+    .subject.lit {
+        background-color: #d1c4e9;
+    }
+    
+    .subject.physics {
+        background-color: #c8e6c9;
+    }
+    
+    .subject.cs {
+        background-color: #ffe0b2;
+    }
+</style>
+
+<body>
+    <h1>Thời khóa biểu</h1>
+
+    <div class="timetable">
+        <!-- Hàng tiêu đề -->
+        <div class="cell header">Giờ</div>
+        <div class="cell header">Thứ 2</div>
+        <div class="cell header">Thứ 3</div>
+        <div class="cell header">Thứ 4</div>
+        <div class="cell header">Thứ 5</div>
+        <div class="cell header">Thứ 6</div>
+
+        <!-- Hàng 1 -->
+        <div class="timetable-row">
+            <div class="cell time-col">7:30 - 8:30</div>
+            <div class="cell subject math">Toán CC1</div>
+            <div class="cell subject lit">Văn hóa đa quốc gia</div>
+            <div class="cell subject physics">Vật lý đại cương</div>
+            <div class="cell subject cs">Tin học văn phòng</div>
+            <div class="cell subject">Thể chất 2</div>
+        </div>
+
+        <!-- Hàng 2 -->
+        <div class="timetable-row">
+            <div class="cell time-col">8:45 - 9:45</div>
+            <div class="cell subject lit">Văn hóa đa quốc gia</div>
+            <div class="cell subject cs">Lập trình Web</div>
+            <div class="cell subject math">Toán CC1</div>
+            <div class="cell subject">Lịch sử Đảng</div>
+            <div class="cell subject">Âm nhạc</div>
+        </div>
+
+        <!-- Hàng 3 -->
+        <div class="timetable-row">
+            <div class="cell time-col">10:00 - 11:00</div>
+            <div class="cell subject">Ngoại ngữ</div>
+            <div class="cell subject physics">Vật lý đại cương</div>
+            <div class="cell subject cs">CSS nâng cao</div>
+            <div class="cell subject">Sinh học</div>
+            <div class="cell subject math">Toán CC1</div>
+        </div>
+
+    </div>
+</body>
+
+</html>
