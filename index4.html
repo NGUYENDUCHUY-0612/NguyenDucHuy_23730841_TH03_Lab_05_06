@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.Form đăng ký thông tin</title>
+</head>
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: aliceblue;
+        font-weight: 100;
+    }
+    
+    h1 {
+        margin: 20px;
+        text-align: center;
+        font-style: Arial;
+    }
+    
+    form {
+        display: flex;
+        justify-content: center;
+    }
+    
+    input,
+    textarea,
+    select {
+        border: 2px solid gray;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <h1>Form đăng ký thông tin</h1>
+    <form>
+        <label>
+     <div class="a">
+        <br> <input type="text"  placeholder="Họ và tên"><br>
+        <br> <input type="text"  placeholder="Email"><br><br>
+     </div>
+       <Select name="gender">
+        <option value="choose">Chọn giới tính</option>
+        <option value="Nam">Nam</option>
+        <option value="Nữ">Nữ</option>
+       </Select><br><br>
+       <textarea rows="5" cols="40" placeholder="Nhập ý kiến tại đây"></textarea>
+       <br> <input type="submit" value="Gửi">
+    </label>
+    </form>
+</body>
+
+</html>
